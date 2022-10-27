@@ -63,6 +63,36 @@ build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles\install.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D "G:\My Drive\myProject\cppProjects\cppProjects\CatCutifier\out\build\x64-debug" && "C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles\install\local.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D "G:\My Drive\myProject\cppProjects\cppProjects\CatCutifier\out\build\x64-debug" && "C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install\local: phony CMakeFiles\install\local.util
+
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # G:/My Drive/myProject/cppProjects/cppProjects/CatCutifier/CMakeLists.txt
@@ -126,12 +156,146 @@ build CatCutifier\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 
 build CatCutifier\rebuild_cache: phony CatCutifier\CMakeFiles\rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build CatCutifier\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CatCutifier\CMakeFiles\install.util: CUSTOM_COMMAND CatCutifier\all
+  COMMAND = cmd.exe /C "cd /D "G:\My Drive\myProject\cppProjects\cppProjects\CatCutifier\out\build\x64-debug\CatCutifier" && "C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build CatCutifier\install: phony CatCutifier\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CatCutifier\CMakeFiles\install\local.util: CUSTOM_COMMAND CatCutifier\all
+  COMMAND = cmd.exe /C "cd /D "G:\My Drive\myProject\cppProjects\cppProjects\CatCutifier\out\build\x64-debug\CatCutifier" && "C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build CatCutifier\install\local: phony CatCutifier\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# G:/My Drive/myProject/cppProjects/cppProjects/CatCutifier/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for Doxygen
+
+build docs\Doxygen: phony docs\CMakeFiles\Doxygen docs\doxygen\xml\index.xml
+
+
+#############################################
+# Utility command for Sphinx
+
+build docs\Sphinx: phony docs\CMakeFiles\Sphinx docs\sphinx\index.html docs\doxygen\xml\index.xml
+
+
+#############################################
+# Utility command for edit_cache
+
+build docs\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "G:\My Drive\myProject\cppProjects\cppProjects\CatCutifier\out\build\x64-debug\docs" && "C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build docs\edit_cache: phony docs\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build docs\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "G:\My Drive\myProject\cppProjects\cppProjects\CatCutifier\out\build\x64-debug\docs" && "C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"G:\My Drive\myProject\cppProjects\cppProjects\CatCutifier" -B"G:\My Drive\myProject\cppProjects\cppProjects\CatCutifier\out\build\x64-debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build docs\rebuild_cache: phony docs\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build docs\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build docs\CMakeFiles\install.util: CUSTOM_COMMAND docs\all
+  COMMAND = cmd.exe /C "cd /D "G:\My Drive\myProject\cppProjects\cppProjects\CatCutifier\out\build\x64-debug\docs" && "C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build docs\install: phony docs\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build docs\CMakeFiles\install\local.util: CUSTOM_COMMAND docs\all
+  COMMAND = cmd.exe /C "cd /D "G:\My Drive\myProject\cppProjects\cppProjects\CatCutifier\out\build\x64-debug\docs" && "C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build docs\install\local: phony docs\CMakeFiles\install\local.util
+
+
+#############################################
+# Phony custom command for docs\CMakeFiles\Doxygen
+
+build docs\CMakeFiles\Doxygen | ${cmake_ninja_workdir}docs\CMakeFiles\Doxygen: phony docs\doxygen\xml\index.xml
+
+
+#############################################
+# Custom command for docs\doxygen\xml\index.xml
+
+build docs\doxygen\xml\index.xml | ${cmake_ninja_workdir}docs\doxygen\xml\index.xml: CUSTOM_COMMAND ..\..\..\docs\Doxyfile.in ..\..\..\CatCutifier\CatCutifier.h
+  COMMAND = cmd.exe /C "cd /D "G:\My Drive\myProject\cppProjects\cppProjects\CatCutifier\out\build\x64-debug\docs" && "C:\Program Files\doxygen\bin\doxygen.exe" "G:/My Drive/myProject/cppProjects/cppProjects/CatCutifier/out/build/x64-debug/docs/Doxyfile""
+  DESC = Generating docs
+  restat = 1
+
+
+#############################################
+# Phony custom command for docs\CMakeFiles\Sphinx
+
+build docs\CMakeFiles\Sphinx | ${cmake_ninja_workdir}docs\CMakeFiles\Sphinx: phony docs\sphinx\index.html
+
+
+#############################################
+# Custom command for docs\sphinx\index.html
+
+build docs\sphinx\index.html | ${cmake_ninja_workdir}docs\sphinx\index.html: CUSTOM_COMMAND ..\..\..\docs\conf.py ..\..\..\docs\index.rst docs\doxygen\xml\index.xml
+  COMMAND = cmd.exe /C "cd /D "G:\My Drive\myProject\cppProjects\cppProjects\CatCutifier\out\build\x64-debug\docs" && C:\Users\shay4\AppData\Local\Programs\Python\Python39\Scripts\sphinx-build.exe -b html "-Dbreathe_projects.CatCutifier=G:/My Drive/myProject/cppProjects/cppProjects/CatCutifier/out/build/x64-debug/docs/doxygen/xml" "G:/My Drive/myProject/cppProjects/cppProjects/CatCutifier/docs" "G:/My Drive/myProject/cppProjects/cppProjects/CatCutifier/out/build/x64-debug/docs/sphinx""
+  DESC = Generating documentation with Sphinx
+  restat = 1
+
 # =============================================================================
 # Target aliases.
 
 build CatCutifier: phony CatCutifier\CatCutifier.lib
 
 build CatCutifier.lib: phony CatCutifier\CatCutifier.lib
+
+build Doxygen: phony docs\Doxygen
+
+build Sphinx: phony docs\Sphinx
 
 # =============================================================================
 # Folder targets.
@@ -141,7 +305,7 @@ build CatCutifier.lib: phony CatCutifier\CatCutifier.lib
 #############################################
 # Folder: G:/My Drive/myProject/cppProjects/cppProjects/CatCutifier/out/build/x64-debug
 
-build all: phony CatCutifier\all
+build all: phony CatCutifier\all docs\all
 
 # =============================================================================
 
@@ -151,20 +315,27 @@ build all: phony CatCutifier\all
 build CatCutifier\all: phony CatCutifier\CatCutifier.lib
 
 # =============================================================================
+
+#############################################
+# Folder: G:/My Drive/myProject/cppProjects/cppProjects/CatCutifier/out/build/x64-debug/docs
+
+build docs\all: phony docs\Doxygen docs\Sphinx
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\CatCutifier\CMakeLists.txt C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.23.22060601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\CatCutifier\CMakeLists.txt ..\..\..\cmake\FindSphinx.cmake ..\..\..\docs\CMakeLists.txt ..\..\..\docs\Doxyfile.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindDoxygen.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.23.22060601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\..\..\CMakeLists.txt ..\..\..\CatCutifier\CMakeLists.txt C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.23.22060601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeSystem.cmake: phony
+build ..\..\..\CMakeLists.txt ..\..\..\CatCutifier\CMakeLists.txt ..\..\..\cmake\FindSphinx.cmake ..\..\..\docs\CMakeLists.txt ..\..\..\docs\Doxyfile.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindDoxygen.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.23.22060601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.23.22060601-MSVC_2\CMakeSystem.cmake: phony
 
 
 #############################################

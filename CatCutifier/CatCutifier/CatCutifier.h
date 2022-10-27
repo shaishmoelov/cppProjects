@@ -8,4 +8,5 @@ struct cat {
       Make this cat look super cute
     */
     void make_cute();
+    void make_happy();
 };

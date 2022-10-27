@@ -1,0 +1,112 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "CatCutifier",
+					"jsonFile" : "directory-CatCutifier-Debug-39dbb3ce435dacee2c59.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "CatCutifier",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "docs",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-docs-Debug-6d95f20260d5c50d9dfc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "docs",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "CatCutifier",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "CatCutifier::@b0bdc01cab517b65ba28",
+					"jsonFile" : "target-CatCutifier-Debug-334ce4c330be4b448f32.json",
+					"name" : "CatCutifier",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Doxygen::@25ace4044b5cefe8d37f",
+					"jsonFile" : "target-Doxygen-Debug-14ec0d0e80371e5243e5.json",
+					"name" : "Doxygen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Sphinx::@25ace4044b5cefe8d37f",
+					"jsonFile" : "target-Sphinx-Debug-9ddc2b9899f5efb12b5f.json",
+					"name" : "Sphinx",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "G:/My Drive/myProject/cppProjects/cppProjects/CatCutifier/out/build/x64-debug",
+		"source" : "G:/My Drive/myProject/cppProjects/cppProjects/CatCutifier"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

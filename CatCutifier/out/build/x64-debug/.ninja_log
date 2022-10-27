@@ -1,3 +1,8 @@
 # ninja log v5
-49	906	6885581383680000	CatCutifier/CMakeFiles/CatCutifier.dir/CatCutifier.cpp.obj	af2f7ca5fb539483
-960	2015	6885581394180000	CatCutifier/CatCutifier.lib	f4d2a2d017c50354
+92	1217	6885651700410000	CatCutifier/CMakeFiles/CatCutifier.dir/CatCutifier.cpp.obj	af2f7ca5fb539483
+1250	1928	6885651707090000	CatCutifier/CatCutifier.lib	f4d2a2d017c50354
+1942	6853	6885651742590000	G:/My Drive/myProject/cppProjects/cppProjects/CatCutifier/out/build/x64-debug/docs/sphinx/index.html	aa7abc84e4404cef
+12	227	0	clean	3f9b83505c84670f
+1942	6853	6885651742590000	docs/sphinx/index.html	aa7abc84e4404cef
+128	1937	6885651645800000	docs/doxygen/xml/index.xml	cc045679efc891db
+128	1937	6885651645800000	G:/My Drive/myProject/cppProjects/cppProjects/CatCutifier/out/build/x64-debug/docs/doxygen/xml/index.xml	cc045679efc891db
