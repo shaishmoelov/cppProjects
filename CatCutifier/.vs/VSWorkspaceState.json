@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\docs",
-    "\\docs\\html",
-    "\\out\\build"
+    "\\CatCutifier"
   ],
-  "SelectedNode": "\\CMakeLists.txt",
+  "SelectedNode": "\\CatCutifier\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }
